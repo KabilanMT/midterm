@@ -114,16 +114,40 @@ function NewElement(itself) {
     newItem.setAttribute("onclick", "InnerChange(this)");
     newItem.setAttribute("class", setClass);
     
-    
-    //gets input
-    
-    
-     
-    
-//    var msgInput = document.getElementById("msg")
-//
-//    msgInput.value;     
 }
+    //gets input
+function CustomElement(itself) {
+    //gets picture url
+    var imgInput = document.getElementById("ImgInput");
+    var customImage = imgInput.value;
+
+    //sets class for bottom and reserves the spot
+    if (bottomCheck == 1) {
+        alert("***ERROR: No available space. Try Refreshing the page.***")
+    }
+    else if (bottomCheck == 0) {
+        bottomCheck = 1;
+        setClass = 12
+        var container = document.getElementById("BottomContainer")
+        inputTitle = document.getElementById("TitleInput");
+        inputPara = document.getElementById("ParaInput");
+
+        inputTitle2 = inputTitle.value;
+        inputPara2 = inputPara.value;
+    }
+    else {
+        alert("***ERROR: Something went wrong")
+    }
+
+    //adds new item
+    var newItem = document.createElement("img");
+    container.appendChild(newItem);
+    newItem.setAttribute("ID", "ImageHero");
+    newItem.setAttribute("src", customImage);
+    newItem.setAttribute("onclick", "InnerChange(this)");
+    newItem.setAttribute("class", setClass);
+}
+    
 
 
 

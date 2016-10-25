@@ -89,6 +89,13 @@ body {
     height: 30px;
     border: solid black 2px;
 }
+/*
+#MenuBottom {
+    display: flex;
+    flex-flow: column;
+    align-content: flex-end;
+}
+*/
 #MenuButton {
     position: relative;
     margin-left: 65%;
@@ -96,7 +103,23 @@ body {
     height: 50px;
     background-color: darkgray;
     border: none;
+
+}
+#ImgInput {
+    position: relative;
+    width: 90%;
+    margin: 5%;
+    height: 30px;
+    border: solid black 2px;
 }
 
+#ImgButton {
+    position: relative;
+    margin-left: 65%;
+    width: 30%;
+    height: 50px;
+    background-color: darkgray;
+    border: none;
+}
 
 
